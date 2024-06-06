@@ -1,6 +1,3 @@
-# For-Strongest-Link-API-DOC
-因为学校gitlab服务器一直炸所以把文档放这边来了
-
 **domain(服务域名):**
 - https://flask-vawn-98759-4-1325341963.sh.run.tcloudbase.com/
 
@@ -1371,11 +1368,20 @@ wss://[域名]
 
 服务端消息字段
 
-msg.msg_type:('text'/'image'/'video'/'file')
+msg.msg_type:('text'/'image'/'voice'/'video'/'file')
 
 msg.content 只在text消息类型出现 代表消息内容
 
 msg.file_id 只在除text以外的消息类型中出现 代表该文件的id
+
+msg.file_info type == ('image'/'voice'/'video'/'file') 包含以下字段
+
+    'id' 文件id
+    'name' 文件名(包含后缀)
+    'type' 后缀名
+    'size' 文件大小 单位B
+    'time' 上传时间
+    'duration' 时长 type == ('voice'/'video') 时出现
 
 history 为真表示该消息是历史记录
 
