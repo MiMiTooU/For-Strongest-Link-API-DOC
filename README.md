@@ -1203,11 +1203,11 @@ success_msg_response
 
 **参数**
 
-| 参数名                      | 类型名    |
-|--------------------------|--------|
-| group_id                 | number |
-| file_id                  | number |
-| thumbnail(可选,下载视频/图片缩略图) | bool   |
+| 参数名                      | 类型名                 |
+|--------------------------|---------------------|
+| group_id                 | number              |
+| file_id                  | number              |
+| thumbnail(可选,下载视频/图片缩略图) | string(填入任何非空字符串即可) |
 
 
 **返回值**
@@ -1484,12 +1484,12 @@ history 为真表示该消息是历史记录
 
 **参数**
 
-| 参数名                      | 类型名    |
-|--------------------------|--------|
-| type                     | string |
-| room_id                  | number |
-| file_id                  | number |
-| thumbnail(可选,下载视频/图片缩略图) | bool   |
+| 参数名                      | 类型名                 |
+|--------------------------|---------------------|
+| type                     | string              |
+| room_id                  | number              |
+| file_id                  | number              |
+| thumbnail(可选,下载视频/图片缩略图) | string(填入任何非空字符串即可) |
 
 **返回值**
 文件数据
