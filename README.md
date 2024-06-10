@@ -1,8 +1,6 @@
 **domain(服务域名):**
-- https://flask-vawn-98759-4-1325341963.sh.run.tcloudbase.com/
+- http://47.120.22.253:8080/
 
-**service name(服务名)**
-- flask-vawn
 ---
 
 # 0.目录
