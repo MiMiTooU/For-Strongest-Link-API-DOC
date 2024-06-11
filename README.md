@@ -491,16 +491,17 @@ sort_order 只能为 ('ASC'(升序),'DESC'(降序))
 
 **返回值**
 
-| 参数名                 | 类型名    |
-|---------------------|--------|
-| groups              | array  |
-| groups[]            | object |
-| groups[].id         | number |
-| groups[].name       | string |
-| groups[].type       | string |
-| groups[].user_cnt   | number |
-| groups[].user_limit | number |
-| groups[].time       | string |
+| 参数名                            | 类型名    |
+|--------------------------------|--------|
+| groups                         | array  |
+| groups[]                       | object |
+| groups[].id                    | number |
+| groups[].name                  | string |
+| groups[].type                  | string |
+| groups[].user_cnt              | number |
+| groups[].user_limit            | number |
+| groups[].time                  | string |
+| dismissed_groups (字段与groups相同) | array  |
 
 [回到目录](#0目录)
 
@@ -1165,6 +1166,8 @@ time格式为"%Y/%m/%d %H:%M:%S"
 | files[].type      | string |
 | files[].size      | number |
 | files[].time      | string |
+| files[].duration  | number |
+| files[].file_type | string |
 
 [回到目录](#0目录)
 
@@ -1382,6 +1385,7 @@ msg.file_info type == ('image'/'voice'/'video'/'file') 包含以下字段
     'size' 文件大小 单位B
     'time' 上传时间
     'duration' 时长 type == ('voice'/'video') 时出现
+    'file_type' 文件类型 ('image'/'voice'/'video'/'file')
 
 history 为真表示该消息是历史记录
 
