@@ -1101,7 +1101,9 @@ success_msg_response
 
 ---
 
-#### 7.删除公告图片
+#### 7.删除公告图片 [POST]
+
+/group/internal/announcement/delPic [POST]
 
 **参数**
 
@@ -1113,6 +1115,25 @@ success_msg_response
 **返回值**
 
 success_msg_response
+
+[回到目录](#0目录)
+
+---
+
+#### 8.获取公告图片 
+
+/group/internal/announcement/getPic [GET]
+
+**参数**
+
+| 参数名              | 类型名    |
+|------------------|--------|
+| group_id         | number |
+| announcement_id  | number |
+
+**返回值**
+
+图片数据
 
 [回到目录](#0目录)
 
